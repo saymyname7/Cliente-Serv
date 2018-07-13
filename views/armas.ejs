@@ -1,0 +1,22 @@
+<% include _header %>
+
+<h1>Registro de armas</h1>
+
+<form action="/armas" method="post">
+    <div class="form-group">
+        <input name="descripcion" type="String" class="form-control" placeholder="Descripciòn" required/>
+    </div>
+    <div class="form-group">
+        <input name="categoria" type="String" class="form-control" placeholder="Categoria" required/>
+    </div>
+    <div class="form-group">
+        <input name="fuerza" type="String" class="form-control" placeholder="Fuerza" required/>
+    </div>
+    <div class="form-group">
+        <input name="municiones" type="Boolean" class="form-control" placeholder="Municiones" required/>
+    </div>
+    <input type="submit" value="Registrate" class="btn btn-primary btn-block"/>
+</form>
+
+
+<%include _footer%>
